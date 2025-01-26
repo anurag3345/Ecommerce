@@ -1,0 +1,52 @@
+/* src/Components/Bags/Bags.css */
+.bagCategory {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.option input[type="radio"] {
+  accent-color: #000000;
+}
+
+.option label {
+  font-size: 1rem;
+  color: #333333;
+  cursor: pointer;
+}
+
+.bags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .bagCategory {
+      gap: 1rem;
+  }
+  
+  .bags {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bags {
+      grid-template-columns: 1fr;
+  }
+}
